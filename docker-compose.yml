@@ -1,0 +1,6 @@
+version: '3.3'
+
+services:
+  sql-translate:
+    build: .
+    image: sql-translate:${IMAGE_TAG:-latest}
