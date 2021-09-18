@@ -4,3 +4,6 @@ services:
   sql-translate:
     build: .
     image: obpt123/sql-translate:${IMAGE_TAG:-latest}
+  sql-translate-latest:
+    build: .
+    image: obpt123/sql-translate:latest

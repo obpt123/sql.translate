@@ -58,27 +58,6 @@
             </executions>
         </plugin>
 
-        <plugin>
-            <groupId>com.spotify</groupId>
-            <artifactId>docker-maven-plugin</artifactId>
-            <version>1.0.0</version>
-
-            <configuration>
-                <imageName>sql_translate:v1</imageName>
-                <baseImage>java:11</baseImage>
-                <maintainer>docker_maven docker_maven@email.com</maintainer>
-                <workdir>/ROOT</workdir>
-                <cmd>["java", "-version"]</cmd>
-                <entryPoint>["java", "-jar", "${project.build.finalName}.jar"]</entryPoint>
-                <resources>
-                    <resource>
-                        <targetPath>/ROOT</targetPath>
-                        <directory>${project.build.directory}</directory>
-                        <include>${project.build.finalName}.jar</include>
-                    </resource>
-                </resources>
-            </configuration>
-        </plugin>
     </plugins>
 </build>
 </project>
