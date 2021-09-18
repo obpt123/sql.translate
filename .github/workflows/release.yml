@@ -30,11 +30,6 @@ jobs:
       with:
         name: sql.translate
         path: target/*.jar
-    - name: Save Artifact
-      uses: actions/upload-artifact@v2
-      with:
-        name: sql.translate
-        path: target/*.jar
     - name: Get Git Tag Name
       run: echo GIT_TAG=${GITHUB_REF:10} >> $GITHUB_ENV
     - name: Set Image Tag
