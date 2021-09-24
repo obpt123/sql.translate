@@ -26,7 +26,7 @@ select name, uuid() as randomid from `dbo`.`table1` limit 1;
 * Convert to postgres
 
 ```
-docker run obpt123/sql-translate:0.0.1 -T postgres -s "select top 1 name, newid() as randomId from [dbo].[table1]"
+docker run obpt123/sql-translate -T postgres -s "select top 1 name, newid() as randomId from [dbo].[table1]"
 ```
 
 the result for the postgres will be:
