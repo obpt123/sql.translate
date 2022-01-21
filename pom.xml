@@ -42,7 +42,7 @@
                 </descriptorRefs>
                 <archive>
                     <manifest>
-                        <mainClass>org.jooq.ParserCLI</mainClass>
+                        <mainClass>sql.translate.NewParseCLI</mainClass>
                     </manifest>
                 </archive>
                 <appendAssemblyId>false</appendAssemblyId>
